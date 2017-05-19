@@ -1,6 +1,6 @@
 var nextToDoId = 0;
 //add todo
-export function addToDo(text) {
+export function addTodo(text) {
   return {
     type: 'ADD_TODO',
     id: nextToDoId++,
