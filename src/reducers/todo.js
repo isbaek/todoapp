@@ -3,8 +3,8 @@ import "../constants/actions";
 const initialState = {
   todos: [
     {
-      id: 1,
-      text: ""
+      id: null,
+      text: "Please add a to do !"
     }
   ]
 };
