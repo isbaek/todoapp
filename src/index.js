@@ -6,17 +6,12 @@ import todo from './reducers/todo'
 import App from './App'
 import './index.css';
 
-import Title from './components/Title'
-import Add from './components/AddToDo'
 
 let store = createStore(todo)
 
 render(
   <Provider store={store}>
-    <div>
-    <Title />
-    <Add />
-    </div>
+    <App />
   </Provider>,
   document.getElementById('root')
 )
