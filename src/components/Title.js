@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 function Title() {
   return<h1> This is a simple To Do App</h1>
