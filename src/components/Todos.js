@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addTodo, deleteToDo } from "../constants/actions";
-import Faclose from "react-icons/lib/fa/close";
+import { deleteToDo } from "../constants/actions";
+//import Faclose from "react-icons/lib/fa/close";
 
 function Todos({ todos, dispatch }) {
   return (

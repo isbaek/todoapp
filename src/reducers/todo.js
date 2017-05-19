@@ -16,7 +16,7 @@ function todo(state = initialState, action) {
   } else if (action.type === "DELETE_TODO") {
     return {
       ...state,
-      todos: state.todos.filter(todo => todo.id != action.id)
+      todos: state.todos.filter(todo => todo.id !== action.id)
     };
   }
   // No or unsupported action

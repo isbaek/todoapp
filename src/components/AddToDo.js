@@ -4,29 +4,31 @@ import { addTodo } from "../constants/actions";
 
 let input;
 
-const AddTodo = ({ dispatch }) => (
-  <div>
-    <form
-      onSubmit={e => {
-        e.preventDefault();
-        if (!input.value.trim()) {
-          return;
-        }
-        dispatch(addTodo(input.value));
-        input.value = "";
-      }}
-    >
-      <input
-        ref={node => {
-          input = node;
+function AddTodo({ dispatch }) {
+  return (
+    <div>
+      <form
+        onSubmit={e => {
+          e.preventDefault();
+          if (!input.value.trim()) {
+            return;
+          }
+          dispatch(addTodo(input.value));
+          input.value = "";
         }}
-      />
-      <button type="submit">
-        Add Todo
-      </button>
-    </form>
-  </div>
-);
+      >
+        <input
+          ref={node => {
+            input = node;
+          }}
+        />
+        <button type="submit">
+          Add Todo
+        </button>
+      </form>
+    </div>
+  );
+}
 
 AddTodo = connect()(AddTodo);
 

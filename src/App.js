@@ -1,9 +1,8 @@
 import React from "react";
 //import VisibleTodoList from './components/ListToDo'
-import Todos from "./components/ListToDo";
-import AddTodo from "./components/AddToDo";
+import Todos from "./components/Todos";
+import AddTodo from "./components/AddTodo";
 import Title from "./components/Title";
-import { connect } from "react-redux";
 
 class App extends React.Component {
   render() {
