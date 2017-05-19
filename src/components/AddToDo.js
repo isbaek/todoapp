@@ -20,14 +20,6 @@ const AddTodo = ({ dispatch }) => (
         ref={node => {
           input = node;
         }}
-        onKeyUp={e => {
-          // Detect if user presses ENTER
-          if (e.keyCode == 13) {
-            console.log("They pressed ENTER !!! :O");
-            dispatch(addTodo(e.target.value));
-            e.target.value = "";
-          }
-        }}
       />
       <button type="submit">
         Add Todo
