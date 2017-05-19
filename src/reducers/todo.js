@@ -1,12 +1,7 @@
 import "../constants/actions";
 
 const initialState = {
-  todos: [
-    {
-      id: null,
-      text: "Please add a to do !"
-    }
-  ]
+  todos: []
 };
 
 function todo(state = initialState, action) {
