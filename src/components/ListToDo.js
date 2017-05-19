@@ -28,18 +28,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(Todos);
-
-/*
-const mapDispatchToProps = (dispatch) => {
-  return {
-    DeleteTodo: (id) => {
-      dispatch(deleteToDo(id))
-    }
-  }
-}
-
-const VisibleTodoList = connect(
-  mapDispatchToProps
-)(ListToDo)
-*/
-//export default VisibleTodoList;
