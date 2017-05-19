@@ -3,11 +3,12 @@ import React from "react";
 import Todos from "./components/Todos";
 import AddTodo from "./components/AddTodo";
 import Title from "./components/Title";
+import "./stylesheets/main.css";
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="Todoapp">
         <Title />
         <AddTodo />
         <Todos />
