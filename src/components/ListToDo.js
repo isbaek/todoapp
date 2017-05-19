@@ -7,16 +7,7 @@ function Todos({ todos, dispatch }) {
   return (
     <div>
       <h1>Todos</h1>
-      <AddTodo
-        onChange={e => {
-          // Detect if user presses ENTER
-          if (e.keyCode == 13) {
-            console.log("They pressed ENTER !!! :O");
-            dispatch(addTodo(e.target.value));
-            e.target.value = "";
-          }
-        }}
-      />
+      <AddTodo />
       <ul>
         {todos.map(todo => <li key={todo.id}>#{todo.id} - {todo.text}</li>)}
       </ul>
