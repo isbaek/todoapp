@@ -7,7 +7,6 @@ function Todos({ todos, dispatch }) {
   return (
     <div>
       <h1>Todos</h1>
-      <AddTodo />
       <ul>
         {todos.map(todo => <li key={todo.id}>#{todo.id} - {todo.text}</li>)}
       </ul>
