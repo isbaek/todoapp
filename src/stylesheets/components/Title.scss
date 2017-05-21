@@ -1,8 +1,19 @@
 @import "../base/fonts.scss";
+@import "../abstracts/variables.scss";
 
 .Title {
-    color: green;
+    color: map-get($colors, brown);
     padding: 20px;
     font-family: $inconsolata;
     font-weight: normal;
+    font-size: 40px;
+    @include respond-to(medium) {
+      font-size: 30px
+    }
+    @include respond-to(small) {
+      font-size: 20px
+    }
+    @include respond-to(xsmall) {
+      font-size: 16px;
+    }
 }

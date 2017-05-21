@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 .Title {
-  color: green;
+  color: #3B1E1E;
   padding: 20px;
   font-family: "Inconsolata", monospace;
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: 40px; }
+  @media (max-width: 992px) {
+    .Title {
+      font-size: 30px; } }
+  @media (max-width: 767px) {
+    .Title {
+      font-size: 20px; } }
+  @media (max-width: 480px) {
+    .Title {
+      font-size: 16px; } }
