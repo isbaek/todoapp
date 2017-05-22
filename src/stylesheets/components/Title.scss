@@ -1,14 +1,14 @@
 @import "../base/fonts.scss";
 @import "../abstracts/variables.scss";
 
-.Title {
-    color: map-get($colors, brown);
-    padding: 20px;
+.title {
+    color: white;
     font-family: $inconsolata;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
     @include respond-to(medium) {
-      font-size: 30px
+      font-size: 25px
     }
     @include respond-to(small) {
       font-size: 20px
@@ -16,4 +16,13 @@
     @include respond-to(xsmall) {
       font-size: 16px;
     }
+}
+
+.title-container {
+  background: map-get($colors, green);
+  left:0;
+  width:100%;
+  top:0;
+  position: relative;
+  margin-bottom: 40px;
 }

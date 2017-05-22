@@ -1,5 +1,11 @@
 @import "./abstracts/variables.scss";
 
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #151923;
+}
+
 .Todoapp {
   @import 'base/fonts.scss';
   @import 'components/Addtodo.scss';
@@ -8,4 +14,5 @@
   flex-direction: column;
   flex: 1;
   align-items: center;
+
 }
