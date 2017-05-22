@@ -3,18 +3,19 @@
 
 .title {
     color: white;
-    font-family: $inconsolata;
-    font-weight: normal;
-    font-size: 30px;
+    padding: 50px;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 45px;
     text-align: center;
     @include respond-to(medium) {
-      font-size: 25px
+      font-size: 40px
     }
     @include respond-to(small) {
-      font-size: 20px
+      font-size: 35px
     }
     @include respond-to(xsmall) {
-      font-size: 16px;
+      font-size: 25px;
     }
 }
 
