@@ -24,13 +24,14 @@ function AddTodo({ dispatch }) {
       >
         <input
           className="input"
+          maxLength="40"
           ref={node => {
             input = node;
           }}
           type="text"
           placeholder="Type something..."
         />
-        <button className="button" type="submit">
+        <button type="submit">
           Add To do
         </button>
       </form>
