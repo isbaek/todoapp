@@ -1,22 +1,31 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteToDo } from "../constants/actions";
-//import Faclose from "react-icons/lib/fa/close";
+import "../stylesheets/components/Todos.css";
+import "../stylesheets/components/Addtodo.css";
+import Close from "react-icons/lib/md/close";
 
 function Todos({ todos, dispatch }) {
   return (
     <div>
-      <h1>Todos</h1>
-      <ul>
-        {todos.map(todo => (
-          <li key={todo.id}>
-            {todo.text}
-            <button onClick={id => dispatch(deleteToDo(todo.id))}>
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
+      <div className="header center">
+        <h2>Todos</h2>
+      </div>
+      <div className="ul-container">
+        <ul>
+          {todos.map(todo => (
+            <div>
+              <li key={todo.id}>
+                {todo.text}
+              </li>
+              <Close
+                className="close-button"
+                onClick={id => dispatch(deleteToDo(todo.id))}
+              />
+            </div>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
