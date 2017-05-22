@@ -16,6 +16,7 @@
     }
     @include respond-to(xsmall) {
       font-size: 25px;
+      padding: 30px;
     }
 }
 
@@ -25,5 +26,5 @@
   width:100%;
   top:0;
   position: relative;
-  margin-bottom: 40px;
+  margin: 0px;
 }
