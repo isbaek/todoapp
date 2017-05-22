@@ -17,26 +17,31 @@
   margin: 8px 0;
   font-size: 25px;
   font-family: "Lato", sans-serif;
-  font-weight: 100;
-  background-color: #151923;
+  font-weight: 300;
+  background-color: #252933;
   border: none;
+  border-radius: 0px;
   color: #fff;
-  border-bottom: 2px solid #fff;
-  min-width: 420px; }
+  border: none;
+  border-radius: 5px;
+  max-width: 420px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 30px; }
   @media (max-width: 992px) {
     .input {
       font-size: 25px;
-      min-width: 380px; } }
+      max-width: 380px; } }
   @media (max-width: 767px) {
     .input {
       font-size: 20px;
-      min-width: 300px; } }
+      max-width: 250px; } }
   @media (max-width: 480px) {
     .input {
-      min-width: 200px; } }
+      max-width: 200px; } }
 
 .input::placeholder {
-  color: #1C212A; }
+  color: #9599a3; }
 
 .input:focus {
   outline: none; }
@@ -46,27 +51,32 @@
   margin: 40px;
   font-size: 30px;
   font-family: "Lato", sans-serif;
-  font-weight: 100; }
+  font-weight: 300; }
   @media (max-width: 767px) {
     .welcome {
-      font-size: 20px; } }
+      font-size: 20px;
+      margin: 30px; } }
 
 button {
   background-color: #00AF79;
   border: none;
   border-radius: 10px;
   color: white;
-  padding: 15px 32px;
+  padding: 12px 32px;
+  margin: 8px 0px;
   text-align: center;
+  vertical-align: middle;
   display: inline-block;
   font-size: 16px;
+  line-height: 30px;
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   margin-left: 30px; }
   @media (max-width: 767px) {
     button {
       font-size: 14px;
-      padding: 13px 20px; } }
+      padding: 12px 20px; } }
   @media (max-width: 480px) {
     button {
+      margin-left: 10px;
       font-size: 12px; } }
