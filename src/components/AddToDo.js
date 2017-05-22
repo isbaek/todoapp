@@ -24,7 +24,7 @@ function AddTodo({ dispatch }) {
       >
         <input
           className="input"
-          maxLength="40"
+          maxLength="45"
           ref={node => {
             input = node;
           }}
