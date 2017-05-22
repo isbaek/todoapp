@@ -18,23 +18,29 @@
 .input {
   padding: 12px 20px;
   margin: 8px 0;
-  font-size: 30px;
+  font-size: 25px;
   font-family: $lato;
   font-weight: 100;
   background-color: #151923;
   border: none;
   color: #fff;
   border-bottom: 2px solid #fff;
+  min-width: 420px;
   @include respond-to(medium) {
     font-size: 25px;
+    min-width: 380px;
   }
   @include respond-to(small) {
     font-size: 20px;
+    min-width: 300px;
+  }
+  @include respond-to(xsmall) {
+    min-width: 200px;
   }
 }
 
 .input::placeholder {
-  color: #1C212A
+  color: #1C212A;
 }
 
 .input:focus {
@@ -44,7 +50,7 @@
 .welcome {
   color: #fff;
   margin: 40px;
-  font-size: 25px;
+  font-size: 30px;
   font-family: $lato;
   font-weight: 100;
   @include respond-to(small) {
