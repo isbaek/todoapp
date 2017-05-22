@@ -7,8 +7,6 @@ body {
 }
 
 .Todoapp {
-  @import 'base/fonts.scss';
-  @import 'components/Addtodo.scss';
   //flex children
   display: flex;
   flex-direction: column;
