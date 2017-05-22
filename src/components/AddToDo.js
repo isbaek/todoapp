@@ -9,7 +9,7 @@ function AddTodo({ dispatch }) {
   return (
     <div>
       <div className="welcome center">
-        <h2>Welcome! Please add a to do</h2>
+        Welcome! Please add a to do
       </div>
       <form
         className="form"
@@ -32,7 +32,7 @@ function AddTodo({ dispatch }) {
           placeholder="Type something..."
         />
         <button type="submit">
-          Add To do
+          Add
         </button>
       </form>
     </div>
