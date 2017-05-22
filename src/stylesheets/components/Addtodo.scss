@@ -8,10 +8,19 @@
   align-items: center;
 }
 
+.form {
+  margin: 40px;
+  @include respond-to(xsmall) {
+    margin: 30px;
+  }
+}
+
 .input {
   padding: 12px 20px;
   margin: 8px 0;
   font-size: 30px;
+  font-family: $lato;
+  font-weight: 100;
   background-color: #151923;
   border: none;
   color: #fff;
@@ -21,9 +30,6 @@
   }
   @include respond-to(small) {
     font-size: 20px;
-  }
-  @include respond-to(xsmall) {
-    font-size: 16px;
   }
 }
 
@@ -37,7 +43,13 @@
 
 .welcome {
   color: #fff;
-  margin-bottom: 20px;
+  margin: 40px;
+  font-size: 25px;
+  font-family: $lato;
+  font-weight: 100;
+  @include respond-to(small) {
+    font-size: 20px;
+  }
 }
 
 button {
@@ -49,6 +61,8 @@ button {
   text-align: center;
   display: inline-block;
   font-size: 16px;
+  font-family: $lato;
+  font-weight: 100;
   margin-left: 30px;
   @include respond-to(small) {
     font-size: 14px;
