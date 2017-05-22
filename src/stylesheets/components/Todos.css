@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.center {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center; }
+
+.header {
+  color: #fff;
+  margin-top: 20px; }
+
+.ul-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 480px; }
+  @media (max-width: 992px) {
+    .ul-container {
+      min-width: 450px; } }
+  @media (max-width: 767px) {
+    .ul-container {
+      min-width: 400px; } }
+  @media (max-width: 480px) {
+    .ul-container {
+      min-width: 300px; } }
+
+ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+li {
+  color: #fff;
+  font-size: 30px;
+  border-bottom: 2px solid #fff;
+  margin-left: 20px;
+  padding: 12px 20px;
+  display: inline-block; }
+  @media (max-width: 992px) {
+    li {
+      font-size: 25px; } }
+  @media (max-width: 767px) {
+    li {
+      font-size: 20px; } }
+  @media (max-width: 480px) {
+    li {
+      font-size: 16px; } }
+
+.close-button {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 30px;
+  display: inline-block; }
+  @media (max-width: 992px) {
+    .close-button {
+      font-size: 25px; } }
+  @media (max-width: 767px) {
+    .close-button {
+      font-size: 20px; } }
+  @media (max-width: 480px) {
+    .close-button {
+      font-size: 16px; } }

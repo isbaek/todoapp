@@ -22,7 +22,7 @@ body {
     background-color: #151923;
     border: none;
     color: #fff;
-    border-bottom: 2px solid #d8d8d8; }
+    border-bottom: 2px solid #fff; }
     @media (max-width: 992px) {
       .Todoapp .input {
         font-size: 25px; } }
@@ -39,7 +39,7 @@ body {
   .Todoapp .welcome {
     color: #fff;
     margin-bottom: 20px; }
-  .Todoapp .button {
+  .Todoapp button {
     background-color: #00AF79;
     border: none;
     border-radius: 10px;
@@ -50,9 +50,9 @@ body {
     font-size: 16px;
     margin-left: 30px; }
     @media (max-width: 767px) {
-      .Todoapp .button {
+      .Todoapp button {
         font-size: 14px;
         padding: 13px 20px; } }
     @media (max-width: 480px) {
-      .Todoapp .button {
+      .Todoapp button {
         font-size: 12px; } }
