@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
 body {
   margin: 0px;
   padding: 0px;
@@ -15,10 +17,17 @@ body {
     flex-direction: column;
     flex: 1;
     align-items: center; }
+  .Todoapp .form {
+    margin: 40px; }
+    @media (max-width: 480px) {
+      .Todoapp .form {
+        margin: 30px; } }
   .Todoapp .input {
     padding: 12px 20px;
     margin: 8px 0;
     font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
     background-color: #151923;
     border: none;
     color: #fff;
@@ -29,16 +38,19 @@ body {
     @media (max-width: 767px) {
       .Todoapp .input {
         font-size: 20px; } }
-    @media (max-width: 480px) {
-      .Todoapp .input {
-        font-size: 16px; } }
   .Todoapp .input::placeholder {
     color: #1C212A; }
   .Todoapp .input:focus {
     outline: none; }
   .Todoapp .welcome {
     color: #fff;
-    margin-bottom: 20px; }
+    margin: 40px;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100; }
+    @media (max-width: 767px) {
+      .Todoapp .welcome {
+        font-size: 20px; } }
   .Todoapp button {
     background-color: #00AF79;
     border: none;
@@ -48,6 +60,8 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
     margin-left: 30px; }
     @media (max-width: 767px) {
       .Todoapp button {
