@@ -8,9 +8,7 @@ import Close from "react-icons/lib/md/close";
 function Todos({ todos, dispatch }) {
   return (
     <div>
-      <div className="header center">
-        <h2>Todos</h2>
-      </div>
+
       <div className="ul-container">
         <ul>
           {todos.map(todo => (
