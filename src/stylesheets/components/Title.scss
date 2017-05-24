@@ -18,6 +18,10 @@
       font-size: 25px;
       padding: 30px;
     }
+    @include respond-to(xxsmall) {
+        font-size: 20px;
+        padding: 25px;
+    }
 }
 
 .title-container {

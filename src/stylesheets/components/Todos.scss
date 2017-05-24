@@ -35,6 +35,9 @@
   @include respond-to(xsmall) {
     min-width: 300px;
   }
+  @include respond-to(xxsmall) {
+    min-width: 250px;
+  }
 }
 
 ul {

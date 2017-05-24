@@ -5,6 +5,7 @@ $colors: (
 );
 
 $breakpoints: (
+  'xxsmall': ( max-width:  320px ),
   'xsmall' : ( max-width:  480px ),
   'small'  : ( max-width:  767px ),
   'medium' : ( max-width:  992px ),
