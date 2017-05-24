@@ -7,10 +7,7 @@
   align-items: center; }
 
 .form {
-  margin: 40px; }
-  @media (max-width: 480px) {
-    .form {
-      margin: 30px; } }
+  margin: 25px; }
   @media (max-width: 320px) {
     .form {
       margin: 20px; } }

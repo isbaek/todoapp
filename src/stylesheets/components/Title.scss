@@ -3,14 +3,11 @@
 
 .title {
     color: white;
-    padding: 50px;
+    padding: 40px;
     font-family: $lato;
     font-weight: 400;
     font-size: 45px;
     text-align: center;
-    @include respond-to(medium) {
-      font-size: 40px
-    }
     @include respond-to(small) {
       font-size: 35px
     }
