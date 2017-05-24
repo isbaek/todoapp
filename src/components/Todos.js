@@ -14,12 +14,12 @@ function Todos({ todos, dispatch }) {
           {todos.map(todo => (
             <div>
               <li key={todo.id}>
-                {todo.text}
+                <span>{todo.text}</span>
+                <Close
+                  className="close-button"
+                  onClick={id => dispatch(deleteToDo(todo.id))}
+                />
               </li>
-              <Close
-                className="close-button"
-                onClick={id => dispatch(deleteToDo(todo.id))}
-              />
             </div>
           ))}
         </ul>

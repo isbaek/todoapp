@@ -36,13 +36,16 @@ ul {
   padding-left: 0; }
 
 li {
-  color: #fff;
+  color: #151923;
   font-size: 25px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   border-bottom: 2px solid #fff;
+  background: #fff;
+  border-radius: 5px;
   padding: 12px 20px;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 16px; }
   @media (max-width: 992px) {
     li {
       font-size: 25px; } }
@@ -55,9 +58,13 @@ li {
 
 .close-button {
   margin-left: 20px;
-  color: #fff;
-  font-size: 30px;
-  display: inline-block; }
+  color: #151923;
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 500000px;
+  background: #151923;
+  color: #fff; }
   @media (max-width: 992px) {
     .close-button {
       font-size: 25px; } }
@@ -67,3 +74,8 @@ li {
   @media (max-width: 480px) {
     .close-button {
       font-size: 16px; } }
+
+.close-button:hover {
+  background: #ff3333;
+  color: #fff;
+  cursor: pointer; }

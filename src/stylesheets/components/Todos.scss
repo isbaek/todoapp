@@ -43,13 +43,16 @@ ul {
 }
 
 li {
-  color: #fff;
+  color: #151923;
   font-size: 25px;
   font-family: $lato;
   font-weight: 300;
   border-bottom: 2px solid #fff;
+  background: #fff;
+  border-radius: 5px;
   padding: 12px 20px;
   display: inline-block;
+  margin-bottom: 16px;
   @include respond-to(medium) {
     font-size: 25px;
   }
@@ -63,9 +66,14 @@ li {
 
 .close-button {
   margin-left: 20px;
-  color: #fff;
-  font-size: 30px;
+  color: #151923;
+  font-size: 20px;
   display: inline-block;
+  padding: 5px;
+  border-radius: 500000px;
+
+    background: #151923;
+    color: #fff;
   @include respond-to(medium) {
     font-size: 25px;
   }
@@ -75,4 +83,10 @@ li {
   @include respond-to(xsmall) {
     font-size: 16px;
   }
+}
+
+.close-button:hover {
+  background: #ff3333;
+  color: #fff;
+  cursor: pointer;
 }
